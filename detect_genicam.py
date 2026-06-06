@@ -3,11 +3,11 @@ from ultralytics import YOLO
 import numpy as np
 import cv2
 
-model = YOLO("MyYOLOv12Model.pt")
+model = YOLO("NewMyYolov12.pt")
 h = Harvester()
 
 print("add file C:\Program Files\iCentral\iCentral\Runtime\\x64\MVProducerGEV.cti to harvestor")
-h.add_file("C:\Program Files\iCentral\iCentral\Runtime\\x64\MVProducerGEV.cti")
+h.add_file("MVProducerGEV.cti")
 h.update()
 
 print("Found Camera:", h.device_info_list)
